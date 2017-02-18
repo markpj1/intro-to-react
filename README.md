@@ -1,10 +1,8 @@
-# A Complete Intro to React
-
-Welcome to a complete intro to React! The site actual workshop material for this repo can be found [here][gh-page]. On the master branch you will find the completed project. On the start branch you will find the barebones boilerplater of the project designed to help you get started.
-
-## Contributing
-
-Please contribute, file issues, and make PRs. More than anything I'm sure there are typos abounding.
+# A Complete Intro to React v-2
+Thank you @btholt and @FrontEndMasters
+this is the first commit of the most basic react component using just React.
+js/Client.js
+comments are for learning puprposes and to deepin my understanding and ability to grok React 
 
 ## License
 
