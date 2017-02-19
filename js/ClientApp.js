@@ -6,8 +6,8 @@ var h1 = React.DOM.h1
 var MyTitle = React.createClass({
   render: function () {
     return (
-      div(null,
-        h1(null, 'Ooops I did it again')
+      div(null,  // this refers to createClass, props reads properties created by it's parents and cannot modify, title is refering to key in object.
+        h1({style: {color: this.props.color, fontweight: 'bold' } }, this.props.title)
       )
     )
   }
@@ -19,10 +19,10 @@ var MyFirstComponent = React.createClass({
   render: function () {
     return (
         div(null, [
-          MyTitleFactory(null),
-          MyTitleFactory(null),
-          MyTitleFactory(null),
-          MyTitleFactory(null)
+          MyTitleFactory({title: 'props are the best', color: 'tomato'}),
+          MyTitleFactory({title: 'props are the worst', color: 'blue'}),
+          MyTitleFactory({title: 'props are the Mehhh', color: 'peru'}),
+          MyTitleFactory({title: 'props are the Whatever', color: 'mediumaquamarine'})
         ]
       )
     )
