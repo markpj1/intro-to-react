@@ -1,17 +1,8 @@
-var div = React.DOM.div
-var h1 = React.DOM.h1
+import React from 'react'
+import ReactDOM from 'react-dom'
+import MyTitle from './MyTitle'
 
-// every component must have a render method that returns markup
-// and must be a pure function ie returns the same value every time.
-var MyTitle = React.createClass({
-  render: function () {
-    return (
-      div(null,  // this refers to createClass, props reads properties created by it's parents and cannot modify, title is refering to key in object.
-        h1({style: {color: this.props.color, fontweight: 'bold' } }, this.props.title)
-      )
-    )
-  }
-})
+var div = React.DOM.div
 // React.createFactory an convenience method that passes components multiple times with passed in value.
 var MyTitleFactory = React.createFactory(MyTitle)
 

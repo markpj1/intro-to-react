@@ -11,3 +11,12 @@ Please contribute, file issues, and make PRs. More than anything I'm sure there 
 MIT
 
 [gh-page]: http://btholt.github.io/complete-intro-to-react/
+
+## Some webpack commands
+webpack js/ClientApp.js public/bundle.js
+
+## For production
+NODE_ENV=production webpack -p js/CLientApp.js public/bundle.js
+
+## Add babel
+webpack --module-bind='js=babel' js/ClientApp.js public/bundle.js
