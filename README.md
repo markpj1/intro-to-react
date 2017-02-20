@@ -20,3 +20,9 @@ NODE_ENV=production webpack -p js/CLientApp.js public/bundle.js
 
 ## Add babel
 webpack --module-bind='js=babel' js/ClientApp.js public/bundle.js
+
+## Run es-lint/standard
+npm run lint -s
+
+### fix simple errors
+npm run lint -- --fix
